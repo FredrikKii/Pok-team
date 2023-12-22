@@ -90,7 +90,7 @@ header {
     flex: 1;
 	z-index: 1;
 	position: relative;
-	/* margin-bottom: 200px; */
+	margin-bottom: 200px;
 }
 
 footer {
@@ -216,7 +216,10 @@ input {
 	
 }
  .saveNickname {
-	width: 250px;
+	/* width: 250px; */
+	height: px;
+	padding: 10px;
+	font-family: 'Press Start 2P';
  } 
 
    
@@ -254,7 +257,8 @@ input {
   }
   
   .pokemonBox img, .PokemonList img, .reserveBox img {	
-	width: 100px;
+	width: 120px;
+	height: 120px;
   }
   
   .pokemonBox, .PokemonList p, .reserveBox {
@@ -293,11 +297,6 @@ input {
 	background-color: rgb(208, 208, 208);
 }
 
-/* .PokemonList > img {
-	height: 70px;
-	width: 60px;
-	margin-right: 265px;
-} */
 .PokemonList > p {
 	font-size: 1em;
 	color: black;
@@ -305,10 +304,6 @@ input {
 
 .pokemonInfos {
 	
-}
-
-.reservePokemonList {
-	background-color: orange;
 }
 
 
@@ -323,14 +318,15 @@ input {
 	/* Your styles for the rest of the items go here */
 	/* background-color: #ffffff;	 */
 	scale: 0.7;
-	margin: -10px;
+	margin: -70px;
 	padding:0;
   }
  
   .teamInfo {
 	display: none;
 	justify-content: center;
-	background-color: rgb(215, 215, 0);
+	text-align:center;
+	background-color: #ffe852;
 	color: black;
 	margin-top: 10px;
 	padding: 10px;
@@ -338,10 +334,10 @@ input {
 
   .reserveBox {
 	display: flex;
+	display: none;
 	justify-content: center;
 	align-items: center;
 	margin-bottom: 80px;
-	border: 2px solid black;
 	padding: 6px;
 
   }
@@ -358,4 +354,26 @@ input {
   
   .kickPokemon {
 	font-family: 'Press Start 2P';
+	margin-bottom: 50px;
+	padding: 10px;
   }
+.reserveBox .kickPokemon {
+	margin-top: 10px;
+	margin-bottom: 24px;
+	font-size: 1.2em;
+}
+
+.reserveBox p {
+	color: black;
+	font-size: 1.2em;
+	margin-top: 0px;
+}
+
+.reserveBox img {
+	width: 120px;
+}
+
+.PokemonList input {
+	padding: 10px;
+	border: 2px solid black;
+}

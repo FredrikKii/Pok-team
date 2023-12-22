@@ -12,13 +12,9 @@ function savePokemon (image, name) {
 		reservePokemonList.push({image, name})
 	}
 	renderTeamSize()
-	// displayReserv(reservePokemonList);
 }
 
 
-// function getPokemons(){
-// 	return pokemons
-// }
 
 export {pokemonsList, savePokemon, reservePokemonList, teamInfo, renderTeamSize}
 

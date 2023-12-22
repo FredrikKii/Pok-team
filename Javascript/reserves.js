@@ -8,7 +8,6 @@ function displayReserve() {
   console.log('yoloigen');
 
   reservePokemonList.forEach((pokemon, index) => {
-    // Shows image and name
     const img = document.createElement('img');
     img.src = pokemon.image;
     img.alt = pokemon.name;
@@ -25,9 +24,7 @@ function displayReserve() {
 
     kickBtn.addEventListener('click', () => {
       console.log('Kick button clicked!');
-      // Handle kick functionality
       reservePokemonList.splice(index, 1);
-      // Re-render the updated list
       displayReserve();
     });
   });

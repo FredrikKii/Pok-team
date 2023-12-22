@@ -36,8 +36,6 @@ findPokemonBackBtn.addEventListener('click',findPokemonBack);
 function myPokemon() {	
     displayPokemons()
 	displayReserve()
-	// const displayPokemonElements = document.querySelectorAll('.displayPokemon');
-    // buttonsElement.style.visibility = (computedVisibility === 'hidden') ? 'visible' : 'hidden';
     
     buttonsElement.style.display = 'none';
     headerElement.style.display = 'none';
@@ -46,16 +44,11 @@ function myPokemon() {
 	pokemonBoxElement.style.display = 'none';
 	teamInfo.style.display = 'flex';
 	reserveBox.style.display = 'flex';
-
-    // PokemonListElement.classList.add('visible');
-    // displayPokemonElements.forEach(function (element) {
-    //     element.style.display = 'block';
-    // });
+	reserveBox.style.display = 'visible'
 }
 
 function findPokemon() {
-    // const displayPokemonElements = document.querySelectorAll('.displayPokemon');
-    // buttonsElement.style.visibility = (computedVisibility === 'hidden') ? 'visible' : 'hidden';
+
     
     findPokemonBackElement.style.display = 'none';
     headerElement.style.display = 'none';
@@ -66,19 +59,14 @@ function findPokemon() {
 	searchElement.style.display = "block";
 	pokemonNameElement.style.display = "block";
 	teamInfo.style.display = 'flex';
-	// pokemonSearchElement.style.display = 'block';
-    
-    // displayPokemonElements.forEach(function (element) {
-        //     element.style.display = 'none';
-        // });
+	
+	
         
         console.log('Hejhej');
     }
     
     function findPokemonBack() {
-        // pokemonList2.innerHTML=''
         const displayPokemonElements = document.querySelectorAll('.displayPokemon');
-        // buttonsElement.style.visibility = (computedVisibility === 'hidden') ? 'visible' : 'hidden';
         
         buttonsElement.style.display = 'none';
         findPokemonBackElement.style.display = 'none';
@@ -94,7 +82,6 @@ function findPokemon() {
         searchBoxElement.style.display = 'flex';
 		teamInfo.style.display = 'flex';
 		reserveBox.style.display = 'none'
-        // pokemonSearchElement.style.display = 'block';
         
         displayPokemonElements.forEach(function (element) {
             element.style.display = 'block';
@@ -106,67 +93,18 @@ function findPokemon() {
     function myPokemonBack() {
         displayPokemons()
 		displayReserve()
-        // const displayPokemonElements = document.querySelectorAll('.displayPokemon');
-        // buttonsElement.style.visibility = (computedVisibility === 'hidden') ? 'visible' : 'hidden';
-        // displayPokemon.style.display = 'block';
 		teamInfo.style.display = 'flex';
         buttonsElement.style.display = 'none';
         PokemonListElement.style.display = 'block';
     header2Element.style.display = 'block';
     header3Element.style.display = 'none';
     myPokemonBackElement.style.display = 'none';
-    // PokemonListElement.style.display = 'block';
 	PokemonListElement.style.display = 'grid';
-    // PokemonListElement.classList.add('visible');
 	findPokemonBackElement.style.display = 'block';
-	// pokemonNameElement.style.display = "none";
 	searchBoxElement.style.display = 'none';
 	pokemonBoxElement.style.display = "none";
 	reserveBox.style.display = 'flex';
-	// PokemonListElement.style.display = 'block';
-	// reservePokemonList.style.display = "block";
-	// pokemonsInfos.style.display = "none";
-	// pokemonSearchElement.style.display = 'none';
-
-    // displayPokemonElements.forEach(function (element) {
-    //     element.style.display = 'block';
-    // });
+	
 
     console.log('mypokemonback');
 }
-// export {displayPokemonElements}
-// function kickPokemon() {
-// 	displayPokemons();
-// 	const index = Array.from(document.querySelectorAll('.displayPokemon button')).indexOf(event.target);
-// 	const displayPokemonElements = document.querySelectorAll('.displayPokemon');
-// 	buttonsElement.style.visibility = (computedVisibility === 'hidden') ? 'visible' : 'hidden';
-  
-// 	headerElement.style.display = 'none';
-// 	header2Element.style.display = 'block';
-// 	header3Element.style.display = 'none';
-// 	myPokemonBackElement.style.display = 'none';
-// 	PokemonListElement.style.display = 'block';
-// 	PokemonListElement.style.display = 'grid';
-// 	findPokemonBackElement.style.display = 'block';
-// 	pokemonNameElement.style.display = "none";
-// 	searchElement.style.display = "none";
-// 	pokemonBoxElement.style.display = "block";
-// 	// reservePokemonList.style.display = "block";
-  
-// 	displayPokemonElements.forEach(function (element) {
-// 	  element.style.display = 'block';
-  
-// 	  // Add Kick button to each displayed Pokemon
-// 	  const button = document.createElement('button');
-// 	  button.textContent = 'Kick';
-// 	  button.id = 'kickPokemon';  // Set the id attribute
-// 	  button.addEventListener('click', () => {
-// 		// Call the kickPokemon function instead of directly manipulating the array
-// 		kickPokemon();
-// 	  });
-// 	  element.appendChild(button);
-// 	});
-  
-// 	console.log('kickPokemon');
-//   }
-  
